@@ -112,7 +112,7 @@ export function Contact() {
                   <InstagramIcon size={22} />
                 </motion.a>
                 <motion.a
-                  href="https://www.youtube.com/c/ISAImartialarts/videos"
+                  href="https://www.youtube.com/@ISAImartialarts"
                   target="_blank"
                   rel="noreferrer"
                   whileHover={reduce ? undefined : { y: -3, scale: 1.05 }}

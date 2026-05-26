@@ -20,8 +20,8 @@ const videos = [
     tag: "טכניקה",
   },
   {
-    id: "zx2SJvcgHsc",
-    title: "ISAI — תנועה טבעית ולחימה",
+    id: "pWhXNfe_cz4",
+    title: "ISAI Pushing Hands — דמו קצר",
     tag: "תרגול",
   },
 ];
@@ -83,7 +83,7 @@ export function Videos() {
 
         <Reveal delay={0.2}>
           <a
-            href="https://www.youtube.com/@isai7245"
+            href="https://www.youtube.com/@ISAImartialarts"
             target="_blank"
             rel="noreferrer"
             className="mt-12 inline-flex items-center gap-3 text-sm tracking-[0.25em] text-amber transition-colors hover:text-amber-2"
