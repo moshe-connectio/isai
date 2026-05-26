@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 const links = [
   { href: "#philosophy", label: "פילוסופיה" },
   { href: "#pillars", label: "העקרונות" },
+  { href: "#fish-play", label: "תרגול היסוד" },
   { href: "#levels", label: "שמונה הרבדים" },
   { href: "#founder", label: "המייסד" },
   { href: "#training", label: "אימונים" },

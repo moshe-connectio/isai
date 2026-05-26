@@ -28,15 +28,15 @@ export function Founder() {
       <div className="relative mx-auto grid max-w-6xl gap-16 md:grid-cols-12">
         <Reveal className="md:col-span-5">
           <p className="text-xs tracking-[0.4em] text-amber/80">
-            04 — המייסד
+            05 — המייסד
           </p>
           <h2 className="mt-6 text-4xl md:text-5xl">
-            מוניה
+            משה
             <br />
             גורליק
           </h2>
           <p className="mt-6 text-sm tracking-[0.25em] text-mute">
-            MONYA GORELIK
+            MOSHE GORELIK
           </p>
 
           <p className="mt-10 text-lg leading-relaxed text-bone-2">

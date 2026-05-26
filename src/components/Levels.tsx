@@ -39,7 +39,7 @@ export function Levels() {
       <div className="mx-auto max-w-6xl">
         <Reveal className="mb-16 max-w-3xl">
           <p className="text-xs tracking-[0.4em] text-amber/80">
-            03 — שמונה הרבדים
+            04 — שמונה הרבדים
           </p>
           <h2 className="mt-6 text-4xl md:text-5xl">
             כל אבולוציית החיים

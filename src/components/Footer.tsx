@@ -11,7 +11,7 @@ export function Footer() {
           </p>
         </div>
         <p className="text-xs text-mute">
-          © {new Date().getFullYear()} ISAI · Founded by Monya Gorelik. All
+          © {new Date().getFullYear()} ISAI · Founded by Moshe Gorelik. All
           rights reserved.
         </p>
       </div>

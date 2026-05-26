@@ -20,7 +20,7 @@ const heebo = Heebo({
 export const metadata: Metadata = {
   title: "ISAI — אמנות לחימה ישראלית | The Martial Art of Formless Flow",
   description:
-    "ISAI — Israeli Science & Art of Integrity. אמנות לחימה ישראלית המבוססת על תנועה טבעית, ביומכניקה פרקטלית (Kinegenesis) ועקרונות Formless Flow. נוסדה ע״י מוניה גורליק.",
+    "ISAI — Israeli Science & Art of Integrity. אמנות לחימה ישראלית המבוססת על תנועה טבעית, ביומכניקה פרקטלית (Kinegenesis) ועקרונות Formless Flow. נוסדה ע״י משה גורליק.",
   keywords: [
     "ISAI",
     "איסאי",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     "תנועה טבעית",
     "Formless Flow",
     "Kinegenesis",
-    "Monya Gorelik",
-    "מוניה גורליק",
+    "Moshe Gorelik",
+    "משה גורליק",
   ],
 };
 

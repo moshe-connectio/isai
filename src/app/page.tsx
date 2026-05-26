@@ -2,6 +2,7 @@ import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Philosophy } from "@/components/Philosophy";
 import { Pillars } from "@/components/Pillars";
+import { FishPlaySection } from "@/components/FishPlaySection";
 import { Levels } from "@/components/Levels";
 import { Founder } from "@/components/Founder";
 import { Training } from "@/components/Training";
@@ -22,14 +23,16 @@ export default function Home() {
         <Divider />
         <Pillars />
         <Divider flip />
+        <FishPlaySection />
+        <Divider />
         <Levels />
-        <Divider />
+        <Divider flip />
         <Founder />
-        <Divider flip />
-        <Training />
         <Divider />
-        <Videos />
+        <Training />
         <Divider flip />
+        <Videos />
+        <Divider />
         <Contact />
       </main>
       <Footer />

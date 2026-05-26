@@ -35,7 +35,7 @@ export function Philosophy() {
               ״טבע האם, לא אני ולא אף מאמן אחר, חידד את התנועה הזו במשך מאות
               מיליוני שנים. תפקידי הוא רק להסיר את מה שמסתיר אותה.״
               <footer className="mt-3 text-sm not-italic text-mute">
-                — מוניה גורליק, מייסד ISAI
+                — משה גורליק, מייסד ISAI
               </footer>
             </blockquote>
           </Reveal>

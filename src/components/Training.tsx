@@ -37,7 +37,7 @@ export function Training() {
       <div className="mx-auto max-w-6xl">
         <Reveal className="mb-16 md:mb-24 max-w-3xl">
           <p className="text-xs tracking-[0.4em] text-amber/80">
-            05 — אימונים
+            06 — אימונים
           </p>
           <h2 className="mt-6 text-4xl md:text-5xl">
             ארבעה מסלולים.{" "}
