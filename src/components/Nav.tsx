@@ -9,6 +9,7 @@ const links = [
   { href: "#levels", label: "שמונה הרבדים" },
   { href: "#founder", label: "המייסד" },
   { href: "#training", label: "אימונים" },
+  { href: "#videos", label: "וידאו" },
   { href: "#contact", label: "צור קשר" },
 ];
 

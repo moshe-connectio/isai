@@ -50,7 +50,7 @@ export function Contact() {
       <div className="mx-auto max-w-6xl">
         <Reveal className="max-w-3xl">
           <p className="text-xs tracking-[0.4em] text-amber/80">
-            06 — צרו קשר
+            07 — צרו קשר
           </p>
           <h2 className="mt-6 text-5xl md:text-7xl">
             הצעד הראשון
