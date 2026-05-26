@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -34,13 +35,16 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:py-5">
-        <a href="#top" className="flex items-baseline gap-2">
-          <span className="font-display text-2xl font-bold tracking-wide text-bone">
-            ISAI
-          </span>
-          <span className="hidden text-xs tracking-[0.3em] text-mute sm:inline">
-            איסאי
-          </span>
+        <a href="#top" className="flex items-center gap-3">
+          <Image
+            src="/logo-isai.jpeg"
+            alt="ISAI martial arts"
+            width="152"
+            height="244"
+            priority
+            className="h-10 w-auto md:h-11"
+          />
+          <span className="sr-only">ISAI — איסאי</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

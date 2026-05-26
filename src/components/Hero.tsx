@@ -6,6 +6,7 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
+import Image from "next/image";
 import { ArrowDown } from "lucide-react";
 import { useRef } from "react";
 import { FlowBackground } from "./FlowBackground";
@@ -84,16 +85,40 @@ export function Hero() {
       >
         <motion.div
           variants={rise}
-          className="flex items-center gap-3 text-xs tracking-[0.45em] text-amber/80"
+          className="flex items-center gap-4"
         >
-          <motion.span
-            initial={reduce ? false : { scaleX: 0 }}
-            animate={{ scaleX: 1 }}
-            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
-            style={{ transformOrigin: "right" }}
-            className="inline-block h-px w-10 bg-amber/60"
-          />
-          <span>ISRAELI SCIENCE &amp; ART OF INTEGRITY</span>
+          <motion.div
+            initial={reduce ? false : { opacity: 0, scale: 0.85, rotate: -8 }}
+            animate={{ opacity: 1, scale: 1, rotate: 0 }}
+            transition={{ duration: 1.4, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+            whileHover={reduce ? undefined : { rotate: 4 }}
+            className="relative"
+          >
+            <Image
+              src="/logo-isai.jpeg"
+              alt="ISAI martial arts"
+              width="152"
+              height="244"
+              priority
+              className="h-16 w-auto md:h-20"
+            />
+            <motion.span
+              aria-hidden
+              animate={reduce ? undefined : { opacity: [0.35, 0.7, 0.35] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="pointer-events-none absolute inset-0 -m-3 rounded-full bg-amber/10 blur-2xl"
+            />
+          </motion.div>
+          <div className="flex items-center gap-3 text-xs tracking-[0.45em] text-amber/80">
+            <motion.span
+              initial={reduce ? false : { scaleX: 0 }}
+              animate={{ scaleX: 1 }}
+              transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+              style={{ transformOrigin: "right" }}
+              className="inline-block h-px w-10 bg-amber/60"
+            />
+            <span>ISRAELI SCIENCE &amp; ART OF INTEGRITY</span>
+          </div>
         </motion.div>
 
         <motion.h1
