@@ -100,7 +100,7 @@ export function Hero() {
           variants={rise}
           className="mt-8 text-[clamp(3.5rem,11vw,9rem)] font-bold leading-[0.9] text-bone"
         >
-          <WordReveal text="איסאי" />
+          <WordReveal text="איסאי" hebrew />
           <span className="block font-display text-amber/90">
             <WordReveal text="ISAI" delay={0.25} />
           </span>
@@ -170,11 +170,44 @@ export function Hero() {
   );
 }
 
-function WordReveal({ text, delay = 0 }: { text: string; delay?: number }) {
+function WordReveal({
+  text,
+  delay = 0,
+  hebrew = false,
+}: {
+  text: string;
+  delay?: number;
+  hebrew?: boolean;
+}) {
   const reduce = useReducedMotion();
+
+  // For Hebrew (RTL) text, animate as a single block to avoid bidi reorder issues.
+  if (hebrew) {
+    return (
+      <span className="inline-block overflow-hidden pb-2 align-baseline">
+        <motion.span
+          initial={reduce ? false : { y: "110%" }}
+          animate={{ y: 0 }}
+          transition={{
+            duration: 1,
+            delay,
+            ease: [0.22, 1, 0.36, 1],
+          }}
+          className="inline-block"
+        >
+          {text}
+        </motion.span>
+      </span>
+    );
+  }
+
+  // For LTR text, split per character for a richer reveal.
   const chars = Array.from(text);
   return (
-    <span className="inline-block overflow-hidden pb-2 align-baseline">
+    <span
+      dir="ltr"
+      className="inline-block overflow-hidden pb-2 align-baseline"
+    >
       {chars.map((c, i) => (
         <motion.span
           key={i}
