@@ -174,7 +174,7 @@ function WordReveal({ text, delay = 0 }: { text: string; delay?: number }) {
   const reduce = useReducedMotion();
   const chars = Array.from(text);
   return (
-    <span className="inline-flex overflow-hidden pb-2 align-baseline">
+    <span className="inline-block overflow-hidden pb-2 align-baseline">
       {chars.map((c, i) => (
         <motion.span
           key={i}
